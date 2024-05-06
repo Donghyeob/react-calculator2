@@ -1,7 +1,8 @@
 import React from 'react';
+import { Button } from './Style/styled';
 
-const Button = React.memo(({ onClick, text }) => {
-    return <button onClick={onClick}>{text}</button>;
-});
+const ButtonEl = ({ onClick, text }) => {
+    return <Button onClick={onClick}>{text}</Button>;
+};
 
-export default Button;
+export default ButtonEl;

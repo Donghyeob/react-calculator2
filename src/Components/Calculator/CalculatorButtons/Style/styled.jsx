@@ -1,11 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const Button = styled.button`
-    height: 68px;
-    padding: 20px 0;
-    border: none;
-    border-radius: 12px;
-    cursor: pointer;
-    background-color: #e1e4e5;
-    font-size: 23px;
+export const ButtonsWrap = styled.div`
+    display: grid;
+    grid-template-columns: repeat(4, 68px);
+    justify-content: center;
+    gap: 16px;
 `;

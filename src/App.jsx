@@ -1,7 +1,9 @@
+import CalculatorEl from './Components/Calculator/index';
+
 function App() {
     return (
         <>
-            <div></div>
+            <CalculatorEl />
         </>
     );
 }
