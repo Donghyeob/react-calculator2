@@ -1,10 +1,10 @@
 import { useSelector } from 'react-redux';
 import wrapper from '../../../store/configureStore';
-import { mainActions } from '../../../store/reducers/main';
+import mainSlice from '../../../store/reducers/main';
 import { ScanInput } from './Style/styled';
 
 const onChangeInput = event => {
-    wrapper.dispatch(mainActions.setScanValue(event.target.value));
+    wrapper.dispatch(mainSlice.actions.setScanValue(event.target.value));
 };
 
 const ScanInputEl = () => {

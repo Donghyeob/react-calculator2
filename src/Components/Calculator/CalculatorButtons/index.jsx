@@ -1,22 +1,22 @@
 import ButtonEl from './Button/index';
 import wrapper from '../../../store/configureStore';
-import { mainActions } from '../../../store/reducers/main';
+import mainSlice from '../../../store/reducers/main';
 import { ButtonsWrap } from './Style/styled';
 
 const reset = () => {
-    wrapper.dispatch(mainActions.reset());
+    wrapper.dispatch(mainSlice.actions.reset());
 };
 
 const onClickButton = value => {
-    wrapper.dispatch(mainActions.addButtonValue(value));
+    wrapper.dispatch(mainSlice.actions.addButtonValue(value));
 };
 
 const onClickDelete = () => {
-    wrapper.dispatch(mainActions.deleteButtonValue());
+    wrapper.dispatch(mainSlice.actions.deleteButtonValue());
 };
 
 const onClickCalculate = () => {
-    wrapper.dispatch(mainActions.getResult());
+    wrapper.dispatch(mainSlice.actions.getResult());
 };
 
 const CalculatorButtons = () => {

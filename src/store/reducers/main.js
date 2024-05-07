@@ -30,5 +30,5 @@ const mainSlice = createSlice({
     extraReducers: builder => builder.addDefaultCase(state => state),
 });
 
-export const mainActions = mainSlice.actions;
+// export const mainActions = mainSlice.actions;
 export default mainSlice;
