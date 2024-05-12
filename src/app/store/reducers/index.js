@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 
-import mainSlice from './main';
+import mainSlice from './main.js';
 
 const rootReducer = (state, action) => {
     const combinedReducer = combineReducers({
