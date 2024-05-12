@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux';
-import wrapper from '../../../store/configureStore';
-import mainSlice from '../../../store/reducers/main';
+import wrapper from '../../../app/store/configureStore.js';
+import mainSlice from '../../../app/store/reducers/main';
 import { ScanInput } from './Style/styled';
 
 const onChangeInput = event => {

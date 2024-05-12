@@ -1,6 +1,6 @@
 import ButtonEl from './Button/index';
-import wrapper from '../../../store/configureStore';
-import mainSlice from '../../../store/reducers/main';
+import wrapper from '../../../app/store/configureStore.js';
+import mainSlice from '../../../app/store/reducers/main';
 import { ButtonsWrap } from './Style/styled';
 
 const reset = () => {
