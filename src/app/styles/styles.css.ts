@@ -1,5 +1,9 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
-import { style } from '@vanilla-extract/css';
+import { globalStyle, style } from '@vanilla-extract/css';
+
+globalStyle('body, html', {
+    margin: 0,
+    padding: 0,
+});
 
 export const app = style({
     height: '100vh',

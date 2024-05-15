@@ -1,10 +1,11 @@
-import CalculatorEl from '../Components/Calculator/index';
+import { Calculator } from '../pages/calculator';
+import { app } from './styles/styles.css';
 
 function App() {
     return (
-        <>
-            <CalculatorEl />
-        </>
+        <div className={`${app}`}>
+            <Calculator />
+        </div>
     );
 }
 
