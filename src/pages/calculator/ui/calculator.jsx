@@ -1,6 +1,6 @@
 import { ScanInput } from '../../../features/scan';
 import { PrintDisplay } from '../../../features/print';
-import { Buttons } from '../../../features/buttons/index.jsx';
+import { Buttons } from '../../../features/buttons';
 import { calculator } from './styled.css';
 
 export const Calculator = () => {

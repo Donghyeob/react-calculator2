@@ -3,23 +3,23 @@ import wrapper from '../../../app/store/configureStore';
 import mainSlice from '../../../app/store/reducers/main';
 import { buttonWrap } from './styled.css';
 
-const reset = () => {
-    wrapper.dispatch(mainSlice.actions.reset());
-};
-
-const onClickButton = value => {
-    wrapper.dispatch(mainSlice.actions.addButtonValue(value));
-};
-
-const onClickDelete = () => {
-    wrapper.dispatch(mainSlice.actions.deleteButtonValue());
-};
-
-const onClickCalculate = () => {
-    wrapper.dispatch(mainSlice.actions.getResult());
-};
-
 export const Buttons = () => {
+    // memoization 처리
+    const reset = () => {
+        wrapper.dispatch(mainSlice.actions.reset());
+    };
+
+    const onClickButton = value => {
+        wrapper.dispatch(mainSlice.actions.addButtonValue(value));
+    };
+
+    const onClickDelete = () => {
+        wrapper.dispatch(mainSlice.actions.deleteButtonValue());
+    };
+
+    const onClickCalculate = () => {
+        wrapper.dispatch(mainSlice.actions.getResult());
+    };
     return (
         <div className={buttonWrap}>
             <Button onClick={reset} text="C" />

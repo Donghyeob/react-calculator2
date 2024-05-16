@@ -1,4 +1,4 @@
-import { Calculator } from '../pages/calculator';
+import { Calculator } from '../pages/Calculator';
 import { app } from './styles/styles.css';
 
 function App() {
